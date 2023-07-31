@@ -1,0 +1,18 @@
+Aula 01 - Strategy:
+
+- Conceitos:
+-- Classe de serviço: uma classe que é uma funcionalidade do sistema;
+-- Classe de modelo: uma classe que é uma definição de algo do nosso domínio;
+-- Interface: um modelo em que as classes que implementarem ela, terão que ter os mesmos métodos;
+
+- Sites para estudar:
+-- https://floating-point-gui.de/ (problemas de pontos flutuantes)
+-- https://refactoring.guru/design-patterns/strategy (padrão de projeto strategy)
+
+- Problemas a serem corrigidos:
+-- CalculadoraDeImpostos (classe de serviço):
+--- É uma classe que cresce para sempre devido a novos impostos no switch case e caso ela receba um imposto inexistente, quebrará!
+---- SOLUÇÃO: Criar uma interface imposto, implementar em cada imposto diferente, na CalculadoraDeImpostos chamar o método da interface e o parametro que define o imposto ser um objeto da interface Imposto. 
+
+- Dicas para programação:
+-- Funcionalidades novas em códigos novos;
